@@ -1,0 +1,4 @@
+[tool.taskipy.tasks]
+server = { cmd ="streamlit run streamlit_app.py", help = "Runs local server." }
+test = { cmd ="python -m pytest -v", help = "Runs all unit tests." }
+test-ipdb = { cmd ="python -m pytest -v -s", help = "Runs all unit tests with ipdb." }
