@@ -1,19 +1,23 @@
 from st_pages import (
+    add_page_title,
     Page,
+    Section,
     show_pages,
 )
 import streamlit as st
 
-st.set_page_config(
-    page_title = 'Codei',
-    page_icon = ':snake:',
-    )
+# st.set_page_config(
+#     page_title = 'Codei',
+#     page_icon = ':snake:',
+#     )
 
 show_pages(
     [
-        Page('streamlit_app.py', 'All we need is Python', '🐍'),
+        Page('streamlit_app.py', 'Home', '🏠'),
         Page('pages/about.py', 'About', ':books:'),
+        Section('Python', '🐍'),
+        Page('pages/python/001_basics.py', 'Básico'),
     ]
 )
 
-st.title('🐍 All we need is Python')
+add_page_title()
