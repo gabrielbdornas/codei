@@ -16,7 +16,7 @@ show_pages(
         Page('streamlit_app.py', 'Home', '🏠'),
         Page('pages/about.py', 'About', ':books:'),
         Section('Python', '🐍'),
-        Page('pages/python/001_basics.py', 'Básico'),
+        Page('pages/python/001_basics.py', 'Basics'),
     ]
 )
 
