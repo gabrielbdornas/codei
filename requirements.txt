@@ -3,3 +3,4 @@ streamlit==1.34.0
 st-pages==0.4.5
 pytest==8.2.0
 taskipy==1.12.2
+PyYAML==6.0.1
