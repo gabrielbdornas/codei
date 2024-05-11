@@ -31,7 +31,7 @@ Examples of expressions:
 # 30
 
 >>> 2 ** 8
-#256
+# 256
 
 >>> 23 // 7
 # 3
@@ -104,11 +104,20 @@ You can name a variable anything as long as it obeys the following rules:
 >>> 23_var = 'hello'
 ```
 
-4. Variable name starting with an underscore (`_`) are considered as "unuseful".
+4. It can't be a reserved word (a small set of keywords that designate special language functionality)[^1].
 
 ```python
->>> # _spam should not be used again in the code
->>> _spam = 'Hello'
+>>> False = 2
+  File "<stdin>", line 1
+    False = 2
+    ^^^^^
+SyntaxError: cannot assign to False
+
+>>> True = 2
+  File "<stdin>", line 1
+    True = 2
+    ^^^^
+SyntaxError: cannot assign to True
 ```
 
 ## Augmented Assignment Operators
@@ -160,9 +169,12 @@ Multiline comment:
 Code with a comment:
 
 ```python
-a = 1  # initialization
+a = 1 # initialization
 ```
 
-Please note the two spaces in front of the comment.
-
 ## References
+
+- [Python official documentation - An Informal Introduction to Python](https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python). You could stop reading at the [3.1.3. Lists](https://docs.python.org/3/tutorial/introduction.html#lists) topic.
+- [Book Automate the Boring Stuff with Python - Chapter 1](https://automatetheboringstuff.com/2e/chapter1/). You could stop reading at [the print() Function](https://automatetheboringstuff.com/2e/chapter1/#:~:text=in%20a%20book.-,The%20print()%20Function,-The%20print()) topic.
+
+[^1]: Type `help('keywords')` on the Python interpreter to get a full list of Python's reserved words.
