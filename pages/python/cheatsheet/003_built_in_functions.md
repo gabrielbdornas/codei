@@ -1,5 +1,7 @@
+Python Built-in Functions
+===
 
-
+[The Python interpreter has a number of functions and types built into it that are always available](https://docs.python.org/3/library/functions.html).
 
 ## The print() Function
 
@@ -12,18 +14,6 @@ The `print()` function writes the value of the argument(s) it is given. [...] it
 >>> a = 1
 >>> print('Hello world!', a)
 # Hello world! 1
-```
-
-### The end keyword
-
-The keyword argument `end` can be used to avoid the newline after the output, or end the output with a different string:
-
-```python
-phrase = ['printed', 'with', 'a', 'dash', 'in', 'between']
->>> for word in phrase:
-...     print(word, end='-')
-...
-# printed-with-a-dash-in-between-
 ```
 
 ### The sep keyword

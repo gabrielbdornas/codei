@@ -17,6 +17,8 @@ show_pages(
         Page('pages/about.py', 'About', ':books:'),
         Section('Python', '🐍'),
         Page('pages/python/001_basics.py'),
+        Page('pages/python/002_functions.py'),
+        Page('pages/python/003_built_in_functions.py'),
     ]
 )
 

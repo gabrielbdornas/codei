@@ -1,20 +1,8 @@
----
-title: Python Functions - Python Cheatsheet
-description: In Python, A function is a block of organized code that is used to perform a single task.
----
-
-<base-title :title="frontmatter.title" :description="frontmatter.description">
 Python Functions
-</base-title>
+===
 
-<base-disclaimer>
-  <base-disclaimer-title>
-    <a target="_blank" href="https://en.wikiversity.org/wiki/Programming_Fundamentals/Functions">Programming Functions</a>
-  </base-disclaimer-title>
-  <base-disclaimer-content>
-    A function is a block of organized code that is used to perform a single task. They provide better modularity for your application and reuse-ability.
-  </base-disclaimer-content>
-</base-disclaimer>
+A function is a block of organized code that is used to perform a single task.
+They provide better modularity for your application and reuse-ability.
 
 ## Function Arguments
 
@@ -122,62 +110,7 @@ There are four rules to tell whether a variable is in a local scope or global sc
 
 1. But if the variable is not used in an assignment statement, it is a global variable.
 
-## Lambda Functions
-
-In Python, a lambda function is a single-line, anonymous function, which can have any number of arguments, but it can only have one expression.
-
-<base-disclaimer>
-  <base-disclaimer-title>
-    From the <a target="_blank" href="https://docs.python.org/3/library/ast.html?highlight=lambda#function-and-class-definitions">Python 3 Tutorial</a>
-  </base-disclaimer-title>
-  <base-disclaimer-content>
-    lambda is a minimal function definition that can be used inside an expression. Unlike FunctionDef, body holds a single node.
-  </base-disclaimer-content>
-</base-disclaimer>
-
-<base-warning>
-  <base-warning-title>
-    Single line expression
-  </base-warning-title>
-  <base-warning-content>
-    Lambda functions can only evaluate an expression, like a single line of code.
-  </base-warning-content>
-</base-warning>
-
-This function:
-
-```python
->>> def add(x, y):
-...     return x + y
-...
->>> add(5, 3)
-# 8
-```
-
-Is equivalent to the _lambda_ function:
-
-```python
->>> add = lambda x, y: x + y
->>> add(5, 3)
-# 8
-```
-
-Like regular nested functions, lambdas also work as lexical closures:
-
-```python
->>> def make_adder(n):
-...     return lambda x: x + n
-...
->>> plus_3 = make_adder(3)
->>> plus_5 = make_adder(5)
-
->>> plus_3(4)
-# 7
->>> plus_5(4)
-# 9
-```
-
-Function docstring:
+## Function docstring:
 
 ```python
 def foo():
